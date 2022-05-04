@@ -21,6 +21,8 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+#if !EXCLUDE_FROM_MSALCPP
+
 #import "MSIDAADTokenRequestServerTelemetry.h"
 #import "MSIDCurrentRequestTelemetry.h"
 #import "MSIDLastRequestTelemetry.h"
@@ -69,3 +71,20 @@
 }
 
 @end
+
+#else
+
+@interface MSIDAADTokenRequestServerTelemetry()
+
+@end
+
+@implementation MSIDAADTokenRequestServerTelemetry
+
+- (void)handleError:(NSError *) __unused error
+            context:(id<MSIDRequestContext>) __unused context
+{
+}
+
+@end
+
+#endif
