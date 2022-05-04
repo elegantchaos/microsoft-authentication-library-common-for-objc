@@ -74,17 +74,9 @@
 
 #else
 
+#import "MSIDAADTokenRequestServerTelemetry.h"
+
 @interface MSIDAADTokenRequestServerTelemetry()
-
-@end
-
-@implementation MSIDAADTokenRequestServerTelemetry
-
-- (void)handleError:(NSError *) __unused error
-            context:(id<MSIDRequestContext>) __unused context
-{
-}
-
 @end
 
 #endif

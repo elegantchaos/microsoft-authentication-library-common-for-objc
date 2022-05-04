@@ -39,14 +39,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 NS_ASSUME_NONNULL_END
 
-#else
+#else // MSAL CPP
 
-@class MSIDCurrentRequestTelemetry;
-
-@interface MSIDAADTokenRequestServerTelemetry : NSObject ///<>
-
-@property (nonatomic) MSIDCurrentRequestTelemetry *currentRequestTelemetry;
-
+@interface MSIDAADTokenRequestServerTelemetry
 @end
 
 #endif
