@@ -72,11 +72,4 @@
 
 @end
 
-#else
-
-#import "MSIDAADTokenRequestServerTelemetry.h"
-
-@interface MSIDAADTokenRequestServerTelemetry()
-@end
-
 #endif

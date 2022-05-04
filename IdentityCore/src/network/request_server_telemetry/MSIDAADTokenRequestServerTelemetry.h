@@ -39,9 +39,4 @@ NS_ASSUME_NONNULL_BEGIN
 
 NS_ASSUME_NONNULL_END
 
-#else // MSAL CPP
-
-@interface MSIDAADTokenRequestServerTelemetry
-@end
-
 #endif
