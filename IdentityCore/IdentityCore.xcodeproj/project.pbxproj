@@ -5993,7 +5993,7 @@
 			attributes = {
 				CLASSPREFIX = MSID;
 				LastSwiftUpdateCheck = 1160;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 1340;
 				ORGANIZATIONNAME = Microsoft;
 				TargetAttributes = {
 					1EE8FF5524F4BB3800CA1445 = {
@@ -8325,6 +8325,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D6CF4E931FC3626A00CD70C5 /* identitycore__debug.xcconfig */;
 			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"$(MSID_WEBKIT)",
@@ -8339,12 +8340,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D6CF4E9C1FC3626B00CD70C5 /* identitycore__release.xcconfig */;
 			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(MSID_SYSTEMWV)",
 					"$(MSID_WEBKIT)",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				SWIFT_COMPILATION_MODE = wholemodule;
 			};
 			name = Release;
 		};
